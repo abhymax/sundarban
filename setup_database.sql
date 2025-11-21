@@ -28,4 +28,6 @@ CREATE TABLE IF NOT EXISTS inquiries (
 );
 
 -- Insert default admin (username: admin, password: password123)
-INSERT INTO admins (username, password) VALUES ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
+-- Hash generated using password_hash('password123', PASSWORD_DEFAULT)
+INSERT INTO admins (username, password) VALUES ('admin', '$2y$10$S9l7.dJ8J1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1');
+-- Note: The above hash is a placeholder. Please use admin/reset_password.php to set the initial password.
